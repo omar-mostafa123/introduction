@@ -1,0 +1,172 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Cairo", serif;
+}
+
+/*start container*/
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+    /*end container*/
+
+/*start header*/
+
+header {
+    padding: 7px 0 15px;
+    background-image: url(photos/معبد\ إدفو.jpg);
+    background-size: cover;
+    background-position: 0 66%;
+    border-radius: 0 0 56px 56px;
+    position: relative;
+}
+header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    background-color: #00000080;
+}
+header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f5f3f3;
+    z-index: -2;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .container div:first-child {
+    font-size: 25px;
+    font-weight: 600;
+    color: wheat;
+    z-index: 1;
+}
+
+header .container div:last-child {
+    margin-top: -8px;
+    font-size: 23px;
+    font-weight: 600;
+    color: wheat;
+    z-index: 1;
+}
+
+/*media*/
+
+@media (max-width: 768px) {
+    header {
+        padding: 4px 0 8px;
+        border-radius: 0 0 40px 40px;
+    }
+
+    header::before {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    header .container div:first-child {
+        font-size: 23px;
+    }
+
+    header .container div:last-child {
+        font-size: 20px;
+    }
+}
+
+/*end header*/
+
+/* start lectures*/
+
+.lectures {
+    padding: 100px 0;
+    background-color: #f5f3f3;
+}
+
+.lectures .container {
+    direction: rtl;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.lectures .container a {
+    padding: 25px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px #897a3e;
+    text-decoration: none;
+    background-color: #302e2e;
+    color: #e1c288;
+    transition: 0.5s;
+}
+.lectures .container a:hover {
+    transform: scale(1.1);*/
+}
+
+/*media*/
+
+@media (min-width: 768px) {
+    .lectures {
+        height: 100vh;
+    }
+
+    .lectures .container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-height: 1024px) {
+    .lectures .container a {
+        padding: 44px;
+    }
+}
+
+/* end lectures*/
