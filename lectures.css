@@ -13,7 +13,7 @@ body {
     font-family: "Cairo", serif;
 }
 
-/*start container*/
+    /*start container*/
 
 .container {
     padding-left: 15px;
@@ -42,7 +42,7 @@ body {
 
     /*end container*/
 
-/*start header*/
+    /*start header*/
 
 header {
     padding: 7px 0 15px;
@@ -117,9 +117,9 @@ header .container div:last-child {
     }
 }
 
-/*end header*/
+    /*end header*/
 
-/* start lectures*/
+    /*start lectures*/
 
 .lectures {
     padding: 100px 0;
